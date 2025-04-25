@@ -1,0 +1,13 @@
+{
+    "name": "K2_normal_stacksize",
+    "version": "0.1.0",
+    "factorio_version": "2.0",
+    "title": "Krastorio 2 vanilla stacksize",
+    "author": "EvilPLa",
+	"homepage": "",
+    "dependencies": [
+      "base >= 2.0.7",
+      "Krastorio2"
+    ],
+    "description": "Set the Stacksize to normal vanilla like values"
+}
