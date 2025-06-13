@@ -58,7 +58,6 @@ data.raw.tool["kr-singularity-tech-card"].stack_size = 200
 -- data.raw.item[""].stack_size = int
 -- data.raw.item[""].stack_size = int
 
+data.raw.item["uranium-fuel-cell"].stack_size	=	10
+data.raw.item["depleted-uranium-fuel-cell"].stack_size	=	10
 
-if mods["bzsilicon"] then
-  
-end
