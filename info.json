@@ -7,7 +7,8 @@
 	"homepage": "",
     "dependencies": [
       "base >= 2.0.7",
-      "Krastorio2"
+      "? Krastorio2",
+      "? Krastorio2-spaced-out"
     ],
-    "description": "Set the Stacksize to normal vanilla like values"
+    "description": "Set the Stacksize to normal vanilla like values."
 }

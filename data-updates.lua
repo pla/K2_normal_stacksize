@@ -1,3 +1,4 @@
+if not (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then return end
 
 local ore = 50
 local int = 100
@@ -43,15 +44,17 @@ data.raw.item["kr-imersite"].stack_size = ore
 data.raw.item["kr-rare-metal-ore"].stack_size = ore
 data.raw.item["kr-sand"].stack_size = int
 data.raw.item["kr-silicon"].stack_size = int
-data.raw.item["kr-space-research-data"].stack_size = 1000
 data.raw.item["kr-steel-beam"].stack_size = int
 data.raw.item["kr-steel-gear-wheel"].stack_size = int
 data.raw.item["kr-tritium"].stack_size = ore
 data.raw.item["kr-used-pollution-filter"].stack_size = int * 0.5
 data.raw.tool["kr-advanced-tech-card"].stack_size = science
-data.raw.tool["kr-basic-tech-card"].stack_size = science
+if mods["Krastorio2"] then
+  data.raw.tool["kr-basic-tech-card"].stack_size = science
+end
 data.raw.tool["kr-matter-tech-card"].stack_size = science
 data.raw.tool["kr-singularity-tech-card"].stack_size = science
+data.raw.tool["space-science-pack"].stack_size = science
 
 data.raw.item["uranium-fuel-cell"].stack_size	=	10
 data.raw.item["depleted-uranium-fuel-cell"].stack_size	=	10
