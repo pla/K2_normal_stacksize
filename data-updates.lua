@@ -1,10 +1,13 @@
-if not (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then return end
+if not (mods["Krastorio2"] or mods["Krastorio2-spaced-out"]) then
+  return
+end
 
 local ore = 50
 local int = 100
 local fuel = 50
 local expensive = 50
 local science = 200
+local ammo = 100
 
 data.raw.item["kr-advanced-fuel"].stack_size = fuel
 data.raw.item["kr-ai-core"].stack_size = expensive
@@ -56,6 +59,19 @@ data.raw.tool["kr-matter-tech-card"].stack_size = science
 data.raw.tool["kr-singularity-tech-card"].stack_size = science
 data.raw.tool["space-science-pack"].stack_size = science
 
-data.raw.item["uranium-fuel-cell"].stack_size	=	10
-data.raw.item["depleted-uranium-fuel-cell"].stack_size	=	10
+data.raw.item["uranium-fuel-cell"].stack_size = 10
+data.raw.item["depleted-uranium-fuel-cell"].stack_size = 10
 
+-- Ammo
+if settings.startup["k2vss-ammo"].value then
+  data.raw.ammo["firearm-magazine"].stack_size = ammo
+  data.raw.ammo["piercing-rounds-magazine"].stack_size = ammo
+  data.raw.ammo["kr-rifle-magazine"].stack_size = ammo
+  data.raw.ammo["kr-armor-piercing-rifle-magazine"].stack_size = ammo
+  data.raw.ammo["kr-uranium-rifle-magazine"].stack_size = ammo
+  data.raw.ammo["kr-imersite-rifle-magazine"].stack_size = ammo
+  data.raw.ammo["kr-anti-materiel-rifle-magazine"].stack_size = ammo
+  data.raw.ammo["kr-armor-piercing-anti-materiel-rifle-magazine"].stack_size = ammo
+  data.raw.ammo["kr-uranium-anti-materiel-rifle-magazine"].stack_size = ammo
+  data.raw.ammo["kr-imersite-anti-materiel-rifle-magazine"].stack_size = ammo
+end
